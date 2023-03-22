@@ -16,6 +16,7 @@
 		69D41E9129CB27B100F1D7DB /* CoreML_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D41E9029CB27B100F1D7DB /* CoreML_SampleTests.swift */; };
 		69D41E9B29CB27B100F1D7DB /* CoreML_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D41E9A29CB27B100F1D7DB /* CoreML_SampleUITests.swift */; };
 		69D41E9D29CB27B100F1D7DB /* CoreML_SampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D41E9C29CB27B100F1D7DB /* CoreML_SampleUITestsLaunchTests.swift */; };
+		69D41EAA29CB324800F1D7DB /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 69D41EA929CB324800F1D7DB /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		69D41E9629CB27B100F1D7DB /* CoreML-SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D41E9A29CB27B100F1D7DB /* CoreML_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_SampleUITests.swift; sourceTree = "<group>"; };
 		69D41E9C29CB27B100F1D7DB /* CoreML_SampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_SampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69D41EA929CB324800F1D7DB /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		69D41E7829CB27B000F1D7DB /* CoreML-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				69D41EA929CB324800F1D7DB /* MobileNetV2.mlmodel */,
 				69D41E7929CB27B000F1D7DB /* AppDelegate.swift */,
 				69D41E7B29CB27B000F1D7DB /* SceneDelegate.swift */,
 				69D41E7D29CB27B000F1D7DB /* ViewController.swift */,
@@ -260,6 +263,7 @@
 			files = (
 				69D41E7E29CB27B000F1D7DB /* ViewController.swift in Sources */,
 				69D41E7A29CB27B000F1D7DB /* AppDelegate.swift in Sources */,
+				69D41EAA29CB324800F1D7DB /* MobileNetV2.mlmodel in Sources */,
 				69D41E7C29CB27B000F1D7DB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,20 +441,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 242KS3V77L;
+				DEVELOPMENT_TEAM = WCM876B79L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CoreML-Sample/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラのために使用";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "写真のために利用";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "reon.oonishi.CoreML-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "reon.oonishi-CoreML-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -465,20 +472,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 242KS3V77L;
+				DEVELOPMENT_TEAM = WCM876B79L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CoreML-Sample/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラのために使用";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "写真のために利用";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "reon.oonishi.CoreML-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "reon.oonishi-CoreML-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
